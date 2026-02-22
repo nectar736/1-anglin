@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
 
-        // Animate random bars on scroll
-        if (heroBars.length > 0) {
+        // Animate random bars on scroll (desktop only)
+        if (heroBars.length > 0 && window.innerWidth > 768) {
             const scrollPosition = window.scrollY;
             const numBarsToAnimate = 3 + Math.floor(scrollPosition / 100) % 5;
             
