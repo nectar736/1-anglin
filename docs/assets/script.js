@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const header = document.querySelector('.site-header');
-    const heroBars = document.querySelectorAll('.hero-bar');
+    // const heroBars = document.querySelectorAll('.hero-bar');
 
     // Mobile navigation toggle
     navToggle.addEventListener('click', () => {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Animate random bars on scroll (desktop only)
-        if (heroBars.length > 0 && window.innerWidth > 768) {
+        /* if (heroBars.length > 0 && window.innerWidth > 768) {
             const scrollPosition = window.scrollY;
             const numBarsToAnimate = 3 + Math.floor(scrollPosition / 100) % 5;
             
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomHeight = 50 + Math.floor(Math.random() * 140);
                 heroBars[randomIndex].style.height = randomHeight + 'px';
             }
-        }
+        } */
     });
 
     // Smooth scroll for anchor links
